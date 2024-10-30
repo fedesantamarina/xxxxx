@@ -4,15 +4,15 @@ erDiagram
     CLIENTE {
         int ID_Cliente PK
         string Nombre
-        string Teléfono
+        string Telefono
         string Email
-        string Dirección
+        string Direccion
     }
     
     PRODUCTO {
         int ID_Producto PK
         string Nombre
-        string Descripción
+        string Descripcion
         float Precio
         int Stock
     }
@@ -41,6 +41,7 @@ erDiagram
     
     CLIENTE ||--o{ PEDIDO : realiza
     PEDIDO ||--o{ DETALLE_PEDIDO : tiene
-    PRODUCTO ||--o{ DETALLE_PEDIDO : está_en
+    PRODUCTO ||--o{ DETALLE_PEDIDO : esta_en
     EMPLEADO ||--o{ PEDIDO : gestiona
+
 ```
